@@ -1,0 +1,14 @@
+{
+  "name": "intro-component-with-signup-form-master",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass -w src/sass/main.scss:public/css/style.css"
+  },
+  "repository": "https://github.com/aevim/intro-component-with-signup-form-master.git",
+  "author": "aevim <aedigo12@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}

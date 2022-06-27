@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: hsl(0deg, 100%, 74%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: hsl(249deg, 10%, 26%);
+}
+
+a:active {
+  color: white;
+}
+
+a:hover {
+  color: hsl(248deg, 32%, 49%);
+}
+
+input:focus {
+  border-color: #fff;
+}
+
+.form {
+  background-image: url("../../../public/imgs/bg-intro-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding: 90px 24px 32px 24px;
+  margin: 0 auto;
+  max-width: 375px;
+}
+.form__header .header__text {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 32px;
+}
+.form__header .header__paragraph {
+  font-weight: 500;
+}
+.form__price {
+  background-color: hsl(248deg, 32%, 49%);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 8px 0px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 8px 0px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 8px 0px 0px;
+  padding: 22px;
+  margin: 58px 0 22px 0;
+}
+.form__price .price__month {
+  font-weight: 400;
+  margin: auto;
+  width: 200px;
+}
+.form__price .price__highlight {
+  font-weight: 600;
+}
+.form__area {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 8px 0px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 8px 0px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 8px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  padding: 24px;
+}
+.form__area input {
+  border-style: solid;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 14px;
+  padding: 18px;
+}
+.form__area .area__button {
+  background-color: hsl(154deg, 59%, 51%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 -3px 0px 0px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 -3px 0px 0px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 -3px 0px 0px inset;
+  border: none;
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.form__area .area__button--hover:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.form__area .area__terms {
+  color: hsl(246deg, 25%, 77%);
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 0 16px 0 16px;
+}
+.form__area .area__terms__highlight {
+  color: hsl(0deg, 100%, 74%);
+  cursor: pointer;
+  font-weight: 700;
+}
+.form .author__attribution {
+  color: white;
+}
+.form .author__attribution a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.input--warning {
+  border: hsl(0deg, 100%, 74%);
+  color: white;
+  font-size: 14px;
+}
+
+.error--text {
+  bottom: 10px;
+  color: hsl(0deg, 100%, 74%);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  position: relative;
+}
+
+.u-red {
+  color: hsl(0deg, 100%, 74%);
+}
+
+.error--icon {
+  background-image: url("../../../public/imgs/icon-error.svg");
+  background-position: 92% 50%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 900px) {
+  .form {
+    background-image: url("../../../public/imgs/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header price" "header form" "footer footer";
+    max-width: 1440px;
+  }
+  .form__header {
+    grid-area: header;
+    margin-right: 42px;
+    place-self: center;
+    margin-left: 36px;
+    text-align: left;
+  }
+  .form__header .header__text {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  .form__header .header__paragraph {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .form__price {
+    align-self: end;
+    grid-area: price;
+    margin-right: 42px;
+    margin-top: 36px;
+  }
+  .form__price .price__month {
+    font-size: 18px;
+    width: 100%;
+  }
+  .form__area {
+    grid-area: form;
+    margin-right: 42px;
+    padding: 38px;
+  }
+  .form__area input {
+    margin-bottom: 18px;
+    font-size: 14px;
+    padding-left: 32px;
+  }
+  .form__area .area__button {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 -4px 0px 0px inset;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 -4px 0px 0px inset;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 -4px 0px 0px inset;
+    font-size: 18px;
+  }
+  .form__area .area__terms {
+    font-size: 12px;
+  }
+  .form .author {
+    grid-area: footer;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .form {
+    background-image: url("../../../public/imgs/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header price" "header form" "footer footer";
+    max-width: 1440px;
+  }
+  .form__header {
+    grid-area: header;
+    margin-right: 40px;
+    place-self: center;
+    margin-left: 136px;
+    text-align: left;
+  }
+  .form__header .header__text {
+    font-size: 50px;
+    line-height: 1.1;
+  }
+  .form__header .header__paragraph {
+    line-height: 1.5;
+  }
+  .form__price {
+    align-self: end;
+    grid-area: price;
+    margin-right: 122px;
+    margin-top: 36px;
+  }
+  .form__price .price__month {
+    font-size: 18px;
+    width: 100%;
+  }
+  .form__area {
+    grid-area: form;
+    margin-right: 122px;
+    padding: 38px;
+  }
+  .form__area input {
+    margin-bottom: 18px;
+    font-size: 18px;
+    padding: 20px 32px 20px 32px;
+  }
+  .form__area .area__button {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 -4px 0px 0px inset;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 -4px 0px 0px inset;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 -4px 0px 0px inset;
+    font-size: 18px;
+  }
+  .form__area .area__terms {
+    font-size: 12px;
+  }
+  .form .author {
+    grid-area: footer;
+  }
+  .form .error--text {
+    margin-bottom: 12px;
+    text-align: right;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="project made for frontend mentor">
+  <meta name="author" content="aevim">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/imgs/favicon-32x32.png">
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+  <main class="form">
+    <header class="form__header">
+      <h1 class="header__text">Learn to code by watching others</h1>
+      <p class="header__paragraph">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. 
+      </p>
+    </header>
+
+    <div class="form__price">
+      <p class="price__month">
+        <span class="price__highlight">Try it free 7 days</span> then $20/mo. thereafter
+      </p>
+    </div>
+
+    <form class="form__area" action="/">
+      <input aria-label='First Name' class="area__first-name" placeholder="First Name" type="text">
+      <input aria-label='Last Name' class="area__last-name" placeholder="Last Name" type="text">
+      <input aria-label='Email' class="area__email" placeholder="Email Address" type="email">
+      <input aria-label='Password' class="area__password" placeholder="Password" type="password">
+      <input aria-label='submit' class="area__button area__button--hover" type="button" value="Claim your free trial">
+      <p class="area__terms">
+        By clicking the button, you are agreeing to our <span class="area__terms__highlight">Terms and Services</span>
+      </p>
+    </form>
+
+    <footer class="author">
+      <p class="author__attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/aevim" target="_blank">aevim</a>.
+      </p>
+    </footer>
+  </main>
+  <script src="public/js/main.js"></script>
+</body>
+</html>

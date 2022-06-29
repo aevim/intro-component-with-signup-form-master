@@ -188,7 +188,6 @@ input:focus {
 		background-color: b.$blue;
 		padding: 22px;
 		margin: 84px 0 22px 0;
-		
 		.price {
 						&__month {
 				font-weight: 400;
@@ -284,18 +283,21 @@ input:focus {
     max-height: 768px;
 		&__header {
 			grid-area: header;
+			margin-left: 136px;
 			margin-right: 42px;
 			place-self: center;
-			margin-left: 136px;
 			text-align: left;
 			.header {
 				&__text {
-					font-size: 42px;
+					font-size: 45px;
 					line-height: 1.1;
+          margin: 20px 0 30px -12px;
 				}
 				&__paragraph {
-					line-height: 1.5;
-					font-size: 14px;
+					line-height: 1.6;
+					font-size: 15px;
+          margin: 0 0 60px -12px;
+          width: 100%;
 				}
 			}
 		}
@@ -305,7 +307,7 @@ input:focus {
     }
 		&__price {
 			align-self: end;
-			margin: 23px 108px 10px 0;
+			margin: 23px 108px 20px 0;
 			.price__month {
 				font-size: 18px;
 				width: 100%;
@@ -344,13 +346,16 @@ input:focus {
     align-self: center;
     padding-top: 0;
 		&__header {
-			margin-right: 40px;
-      margin-top: 180px;
-			margin-left: 136px;
+      margin: 180px 40px 0 140px;
 			.header {
 				&__text {
 					font-size: 50px;
 				}
+        &__paragraph {
+          margin-bottom: 100px;
+          font-size: 18px;
+          width: 100%;
+        }
 			}
 		}
     &__info {

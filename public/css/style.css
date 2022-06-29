@@ -299,18 +299,21 @@ input:focus {
   }
   .form__header {
     grid-area: header;
+    margin-left: 136px;
     margin-right: 42px;
     place-self: center;
-    margin-left: 136px;
     text-align: left;
   }
   .form__header .header__text {
-    font-size: 42px;
+    font-size: 45px;
     line-height: 1.1;
+    margin: 20px 0 30px -12px;
   }
   .form__header .header__paragraph {
-    line-height: 1.5;
-    font-size: 14px;
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 0 0 60px -12px;
+    width: 100%;
   }
   .form__info {
     display: grid;
@@ -318,7 +321,7 @@ input:focus {
   }
   .form__price {
     align-self: end;
-    margin: 23px 108px 10px 0;
+    margin: 23px 108px 20px 0;
   }
   .form__price .price__month {
     font-size: 18px;
@@ -353,12 +356,15 @@ input:focus {
     padding-top: 0;
   }
   .form__header {
-    margin-right: 40px;
-    margin-top: 180px;
-    margin-left: 136px;
+    margin: 180px 40px 0 140px;
   }
   .form__header .header__text {
     font-size: 50px;
+  }
+  .form__header .header__paragraph {
+    margin-bottom: 100px;
+    font-size: 18px;
+    width: 100%;
   }
   .form__info {
     gap: 20px;

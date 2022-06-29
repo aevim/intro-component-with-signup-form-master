@@ -65,7 +65,7 @@ input:focus {
 		-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 8px 0px 0px;
 		-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 8px 0px 0px;
 		padding: 22px;
-		margin: 58px 0 22px 0;
+		margin: 84px 0 22px 0;
 		
 		.price {
 						&__month {
@@ -164,25 +164,129 @@ input:focus {
 	background-repeat: no-repeat;	
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:800px) {
+ .form {
+	padding: 90px 24px 32px 24px;
+	margin: 0 auto;
+	max-width: 500px;
+	&__header {
+		.header {
+			&__text {
+				font-size: 42px;
+				line-height: 1.2;
+				margin-bottom: 32px;
+        margin-top: 48px;
+			}
+			&__paragraph {
+        margin: auto;
+        width: 400px;
+			}
+		}
+	}
+
+	&__price {
+		background-color: b.$blue;
+		padding: 22px;
+		margin: 84px 0 22px 0;
+		
+		.price {
+						&__month {
+				font-weight: 400;
+				margin: auto;
+				width: 200px;
+			}
+			&__highlight {
+				font-weight: 600;
+			}
+		}
+	}
+
+	&__area {
+		background-color: white;
+		border-radius: 10px;
+		box-shadow: rgba(0, 0, 0, 0.2) 0 8px 0px 0px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 8px 0px 0px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 8px 0px 0px;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 32px;
+		padding: 24px;
+
+		& input {
+			border-style: solid;
+			border-radius: 8px;
+			font-weight: 700;
+			font-size: 15px;
+			margin-bottom: 14px;
+			padding: 18px;
+		}
+
+		.area {
+			&__button {
+				background-color: b.$green;
+				box-shadow: rgba(0, 0, 0, 0.1) 0 -3px 0px 0px inset;
+				-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 -3px 0px 0px inset;
+				-moz-box-shadow: rgba(0, 0, 0, 0.1) 0 -3px 0px 0px inset;
+				border: none;
+				color: white;
+				font-size: 17px;
+				text-transform: uppercase;
+				&--hover:hover {
+					cursor: pointer;
+					opacity: .7;
+				}
+			}
+			&__terms {
+				color: b.$grayishBlue;
+				font-size: 12px;
+				line-height: 1.6;
+				padding: 0 16px 0 16px;
+				&__highlight {
+					color: b.$red;
+					cursor: pointer;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+	.author {
+		&__attribution {
+			color: white;
+			& a:hover {
+				cursor: pointer;
+				text-decoration: underline;
+			}
+		}
+	}
+} 
+}
+
+
+@media only screen and (min-width:1000px) {
+  body {
+    place-content: center;
+  }
+
 	.form {
 		background-image: url('../../../public/imgs/bg-intro-desktop.png');
-		background-repeat: no-repeat;	
-		background-position: center top;
-		background-size: cover;
+		background-position: center center;
+		background-size: contain;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
 		grid-template-areas: 
-    "header price"
+    "header ."
     "header form"
     "footer footer";
+    height: 100%;
 		max-width: 1440px;
+    max-height: 768px;
 		&__header {
 			grid-area: header;
 			margin-right: 42px;
 			place-self: center;
-			margin-left: 36px;
+			margin-left: 136px;
 			text-align: left;
 			.header {
 				&__text {
@@ -195,19 +299,21 @@ input:focus {
 				}
 			}
 		}
+    &__info {
+      display: grid;
+      grid-area: form;
+    }
 		&__price {
 			align-self: end;
-			grid-area: price;
-			margin-right: 42px;
-			margin-top: 36px;
+			margin: 23px 108px 10px 0;
 			.price__month {
 				font-size: 18px;
 				width: 100%;
 			}
 		}
 		&__area {
-			grid-area: form;
-			margin-right: 42px;
+      align-self: center;
+      margin: 0 108px 40px 0;
 			padding: 38px;
 			& input {
 				margin-bottom: 18px;
@@ -233,72 +339,32 @@ input:focus {
 	}
 }
 
-@media only screen and (min-width:1300px) {
+@media only screen and (min-width:1361px) {
 	.form {
-		background-image: url('../../../public/imgs/bg-intro-desktop.png');
-		background-repeat: no-repeat;	
-		background-position: center top;
-		background-size: cover;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
-		grid-template-areas: 
-    "header price"
-    "header form"
-    "footer footer";
-		max-width: 1440px;
+    align-self: center;
+    padding-top: 0;
 		&__header {
-			grid-area: header;
 			margin-right: 40px;
-			place-self: center;
+      margin-top: 180px;
 			margin-left: 136px;
-			text-align: left;
 			.header {
 				&__text {
 					font-size: 50px;
-					line-height: 1.1;
-				}
-				&__paragraph {
-					line-height: 1.5;
 				}
 			}
 		}
+    &__info {
+      gap: 20px;
+    }
 		&__price {
-			align-self: end;
-			grid-area: price;
-			margin-right: 122px;
-			margin-top: 36px;
-			.price__month {
-				font-size: 18px;
-				width: 100%;
-			}
+			margin: 50px 122px -10px 0;
 		}
 		&__area {
-			grid-area: form;
-			margin-right: 122px;
-			padding: 38px;
+      margin: 0 122px 40px 0;
 			& input {
-				margin-bottom: 18px;
-				font-size: 18px;
-				padding: 20px 32px 20px 32px;
-			}
-			.area {
-				&__button {
-				box-shadow: rgba(0, 0, 0, 0.1) 0 -4px 0px 0px inset;
-				-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 -4px 0px 0px inset;
-				-moz-box-shadow: rgba(0, 0, 0, 0.1) 0 -4px 0px 0px inset;
-
-					font-size: 18px;
-				}
-				&__terms {
-					font-size: 12px;
-				}
+				padding: 18px 32px 18px 32px;
 			}
 		}
-		.author {
-			grid-area: footer;
-		}
-
 		.error--text {
 			margin-bottom: 12px;
 			text-align: right;
